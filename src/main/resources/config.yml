@@ -1,0 +1,50 @@
+# BuildCore Configuration File
+# This file contains all configurable options for the BuildCore plugin.
+
+# Command prefix (currently not used, but reserved for future)
+command-prefix: "/builds"
+
+# Default material for builds when not specified
+default-material: "PAPER"
+
+# Messages used throughout the plugin
+messages:
+  no-permission: "&cYou don't have permission to do that."
+  build-created: "&aBuild '{name}' created successfully!"
+  build-deleted: "&aBuild '{name}' deleted successfully!"
+  build-not-found: "&cBuild '{name}' not found."
+  build-exists: "&cBuild '{name}' already exists."
+  teleport-success: "&aTeleported to '{name}'."
+  invalid-material: "&cInvalid material '{material}'."
+  gui-title: "Build Locations - Page {page}"
+  no-builds: "&cNo builds available."
+  page-not-found: "&cPage not found."
+  player-not-found: "&cPlayer '{player}' not found."
+  teleport-to-player: "&aTeleported to {player}."
+  teleport-here: "&aTeleported {player} to you."
+  teleport-pos: "&aTeleported to {x}, {y}, {z}."
+  gamemode-creative: "&aSwitched to creative mode."
+  gamemode-survival: "&aSwitched to survival mode."
+  gamemode-spectator: "&aSwitched to spectator mode."
+  invalid-coordinates: "&cInvalid coordinates."
+
+# Builds storage (do not edit manually, managed by plugin)
+builds: {}
+
+# Scoreboard configuration
+scoreboard:
+  enabled: true
+  title: "&9BuildCore"
+  lines:
+    - ""
+    - "&bServer"
+    - "&f{server}"
+    - ""
+    - "&bOnline"
+    - "&f{online}"
+    - ""
+    - "&bWorld"
+    - "&f{world}"
+    - ""
+    - "&bLocation"
+    - "&f{location}"

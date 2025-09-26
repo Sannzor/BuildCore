@@ -1,0 +1,55 @@
+name: BuildCore
+version: '1.8'
+main: me.pinglagger.buildCore.BuildCore
+api-version: '1.8'
+load: STARTUP
+authors: [ PingLagger ]
+description: A plugin for managing build locations with GUI and teleportation.
+
+commands:
+  builds:
+    description: Manage build locations
+    usage: /<command> [create|delete|teleport|menu] [args]
+    permission: buildcore.menu
+    aliases: [build]
+  tp:
+    description: Teleport to a player
+    usage: /<command> <player>
+    permission: buildcore.teleport
+  tphere:
+    description: Teleport a player to you
+    usage: /<command> <player>
+    permission: buildcore.teleport
+  tppos:
+    description: Teleport to coordinates
+    usage: /<command> <x> <y> <z>
+    permission: buildcore.teleport
+  gmc:
+    description: Switch to creative mode
+    usage: /<command>
+    permission: buildcore.gamemode
+  gms:
+    description: Switch to survival mode
+    usage: /<command>
+    permission: buildcore.gamemode
+  gmsp:
+    description: Switch to spectator mode
+    usage: /<command>
+    permission: buildcore.gamemode
+
+permissions:
+  buildcore.create:
+    description: Allows creating new build locations
+    default: op
+  buildcore.delete:
+    description: Allows deleting build locations
+    default: op
+  buildcore.menu:
+    description: Allows opening the build locations GUI
+    default: true
+  buildcore.teleport:
+    description: Allows using teleport commands
+    default: op
+  buildcore.gamemode:
+    description: Allows changing gamemode
+    default: op
